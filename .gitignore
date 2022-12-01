@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 .DS_Store
-.behave-report.html
+.DS_Store/
 .idea/
 # C extensions
 *.so
@@ -111,7 +111,21 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+behave-report.html
+behave-report.html/
 # Spyder project settings
 .spyderproject
 .spyproject
