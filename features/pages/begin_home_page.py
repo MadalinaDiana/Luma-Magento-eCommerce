@@ -1,10 +1,14 @@
+import time
+
 from features.pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import ElementClickInterceptedException
 
 
 class HomePage(BasePage):
-    URL = "https://magento.softwaretestingboard.com/"
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.URL = "https://magento.softwaretestingboard.com/"
 
     def click_input_search_field(self, field):
         self.driver.find_element(By.ID, field).click()
@@ -34,6 +38,7 @@ class HomePage(BasePage):
         element.click()
 
     def action_selector(self, action):
+        time.sleep(4)
         element = self.driver.find_element(By.XPATH, f'{action}')
         element.click()
 
