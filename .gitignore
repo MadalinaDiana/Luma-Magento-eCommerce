@@ -124,8 +124,7 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-behave-report.html
-behave-report.html/
+*report.html
 # Spyder project settings
 .spyderproject
 .spyproject
