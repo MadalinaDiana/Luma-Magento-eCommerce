@@ -1,10 +1,11 @@
 from features.pages.base_page import BasePage
-from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 
 class CreateAccount(BasePage):
-    URL = "https://magento.softwaretestingboard.com/customer/account/create/"
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.URL = "https://magento.softwaretestingboard.com/customer/account/create/"
 
     def enter_values(self, firstname, lastname, email, password, confpassword):
         self.driver.find_element(By.ID, 'firstname').send_keys(firstname)
@@ -15,3 +16,4 @@ class CreateAccount(BasePage):
 
     def click_submit(self):
         self.driver.find_element(By.XPATH, '//*[@id="form-validate"]/div/div[1]/button').click()
+

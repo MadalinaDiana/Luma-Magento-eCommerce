@@ -18,16 +18,16 @@ Install with pip install <library name>
     /pages # here we have defined the methods used
               # in the testing steps
         /base_page.py
-        /home_page.py
+        /begin_home_page.py
         /create_account.py
 
     /steps #here we implement steps to be executed,
             # using the methods defined in pages
-        /home_page.py
+        /begin_home_page.py
         /create_account.py
         
     /browser.py #here is where test execution is initialized
-    /home_page.feature #here are the tests in Gherkin language
+    /begin_home_page.feature #here are the tests in Gherkin language
     /create_account.feature #here are the tests in Gherkin language
     /environment.py #here we set hooks that put the browser in context
 /behave.ini #here we initialize the creation of the html report

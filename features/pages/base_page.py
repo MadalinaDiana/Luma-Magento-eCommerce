@@ -1,8 +1,9 @@
 class BasePage:
-    URL = ""
+   # URL = ""
 
     def __init__(self, driver):
         self.driver = driver
+        self.URL = ""
 
     def go_home(self):
         self.driver.get(self.URL)
