@@ -2,17 +2,17 @@ Feature: HomePage
 
   Background:
     Given Opened HomePage website
-
+ @scenario_setup
   Scenario:  Search with empty field
     When Click on the 'search' input field.
     Then Search button is not displayed.
-
+ @scenario_setup
   Scenario: Search with valid input field
     When Click on the 'search' input field.
     And Enter in 'search' valid 'short' parameters.
     Then Search button is displayed.
 
-
+ @scenario_setup
   Scenario Outline: Click nav-bar buttons
     When Click the "<button>".
     Then The page with "<url>" is opened.
@@ -24,7 +24,7 @@ Feature: HomePage
       | Gear       | gear.html        |
       | Training   | training.html    |
       | Sale       | sale.html        |
-
+ @scenario_setup
   Scenario Outline: Functionality of products
     When Scroll down on the page.
     And Click the "<measure>" measure.
@@ -37,7 +37,7 @@ Feature: HomePage
       | option-label-size-143-item-167 | [aria-label="Orange"] | (//a[@title='Add to Wish List'])[1] |
       | option-label-size-143-item-168 | [aria-label="Purple"] | (//a[@title='Add to Compare'])[1]   |
       Then Click "//a[@class='action showcart']" submit.
-
+ @scenario_setup
   Scenario Outline: Send invalid/valid Email Subscription
     When Scroll down on the footer of the page.
     And Click on the 'newsletter' input field.

@@ -2,13 +2,12 @@ Feature: Account functionality
 
   Background:
     Given Opened the Sign in page.
-
-  Scenario: Sign In
     When Enter in 'email' valid 'ab@yahoo.com' parameters.
     And Enter in 'pass' valid 'abc123!))' parameters.
     And Click the "send2" measure.
     Then The page redirect to the "customer/account/" page.
 
+ @scenario_setup
   Scenario: Buy items
     When Click the "Sale".
     And Click the "Jackets".
@@ -22,7 +21,7 @@ Feature: Account functionality
     And Click "//*[@id="shipping-method-buttons-container"]/div/button" submit.
     And Click "//*[@id="checkout-payment-method-load"]/div/div/div[2]/div[2]/div[4]/div/button" submit.
     Then Check the 'Thank you for your purchase!'.
-
+ @scenario_setup
   Scenario: Write review
     When Click the "My Wish List".
     And Click on the "(//*[@class="product-item-photo"])[1]" action.
@@ -32,7 +31,7 @@ Feature: Account functionality
     And Enter in 'review_field' valid 'could be a better product, but it is not.' parameters.
     And Click on the "//*[@id="review-form"]/div/div/button" action.
     Then Check the 'You submitted your review for moderation.'.
-
+ @scenario_setup
   Scenario Outline: Compare products
     When Click the "<button>".
     And Click the "<option>".
@@ -46,7 +45,7 @@ Feature: Account functionality
     And Click the "comparison list".
     And Click on the "//tbody/tr/td[1]/div[2]/div[2]/a[1]" action.
     Then The page redirect to the "wishlist/index/index/wishlist_id/20668/" page.
-
+ @scenario_setup
   Scenario: Update My Wish List
     When Click the "My Wish List".
     And Hover on the "(//*[@class="product-item-photo"])[1]" button.

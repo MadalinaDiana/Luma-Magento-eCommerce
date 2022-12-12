@@ -1,5 +1,5 @@
 Feature: Create account
-
+  @scenario_setup
   Scenario Outline: Invalid/Valid input data
     Given  Opened the Create account page.
     When Enter invalid/valid "<firstname>","<lastname>","<email>","<password>" and "<confpassword>" input.
