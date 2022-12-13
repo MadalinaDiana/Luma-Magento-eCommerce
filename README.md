@@ -11,7 +11,7 @@ Hooks (event bindings) can be used to perform additional automation logic at spe
 
 ## To clone this project use the simple steps below
 Go to the top of the Github project -> Above the list of files and folders, click Code ->Copy the URL of the project - Open Terminal in Pycharm - Change the current location to the directory where you want to attach the project - Type git clone and paste the copied url - Press enter. 
-<p align="center">  **Or**  </p>
+<p align="center">  <b>Or</b>  </p>
 
 ## Create project
 Create new project in PyCharm, with virtualenv allocated.
