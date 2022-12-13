@@ -1,4 +1,7 @@
-<span style="color: orange"> # Luma-Magento-eCommerce </span>
+<span style="color: orange">
+    
+    # Luma-Magento-eCommerce 
+</span>
 Final Project ItFactory-Selenium
 ## Gherkin project
 This project tests multiple types of pages, in chrome. The POM structure is used for a better organization of the files.
