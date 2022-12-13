@@ -1,3 +1,9 @@
+<style>
+H1{color:DarkOrange !important;}
+H2{color:Green !important;}
+H3{color:Purple !important;}
+p{color:Red !important;}
+</style>
 # Luma-Magento-eCommerce
 Final Project ItFactory-Selenium
 ## Gherkin project
