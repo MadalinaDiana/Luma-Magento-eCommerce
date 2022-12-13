@@ -11,7 +11,9 @@ Hooks (event bindings) can be used to perform additional automation logic at spe
 
 ## To clone this project use the simple steps below
 Go to the top of the Github project -> Above the list of files and folders, click Code ->Copy the URL of the project - Open Terminal in Pycharm - Change the current location to the directory where you want to attach the project - Type git clone and paste the copied url - Press enter. 
-<center> # OR </center>
+<p align="center">
+# OR 
+</p>
 ## Create project
 Create new project in PyCharm, with virtualenv allocated.
 
@@ -72,6 +74,10 @@ In this feature 50 steps and 6 scenarios were executed and tested, more precisel
 2. Write review.
 3. Compare products
 4. Update My Wish List
+
+After running the code with html report creation after, we will have the following report:
+    <img width="1439" alt="image" src="https://user-images.githubusercontent.com/48148610/207374230-864e5c14-1ad9-4653-98a6-e225307a3bc1.png">
+In this report we will see steps and scenarios that are successfully executed. Steps marked as "Passed" belong to the background passed in scenarios. It is run before the scenario, and without it scenarios cannot be executed successfully. It can be referred to as a prerequisite. 
     
     
 
