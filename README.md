@@ -1,10 +1,4 @@
-<style>
-H1{color:DarkOrange !important;}
-H2{color:Green !important;}
-H3{color:Purple !important;}
-p{color:Red !important;}
-</style>
-# Luma-Magento-eCommerce
+<span style="color: orange"> # Luma-Magento-eCommerce </span>
 Final Project ItFactory-Selenium
 ## Gherkin project
 This project tests multiple types of pages, in chrome. The POM structure is used for a better organization of the files.
@@ -17,7 +11,7 @@ Hooks (event bindings) can be used to perform additional automation logic at spe
 
 ## To clone this project use the simple steps below
 Go to the top of the Github project -> Above the list of files and folders, click Code ->Copy the URL of the project - Open Terminal in Pycharm - Change the current location to the directory where you want to attach the project - Type git clone and paste the copied url - Press enter. 
-<p align="center">  <font color="green"><b>Or</b></font> </p>
+<p align="center" style="color: green">  <b>Or</b> </p>
 
 ## Create project
 Create new project in PyCharm, with virtualenv allocated.
